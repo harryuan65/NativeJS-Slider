@@ -5,6 +5,7 @@ window.onload = ()=>{
       var id = this.getAttribute('id').split('-')[2];
       document.getElementById('current-slide').innerHTML = id;
       document.getElementById('wrap-img').style.left = `${(-(parseInt(id)-1))*600}px`;
+      document.getElementById('btn-slider-1').click();
     }))
   }
 
